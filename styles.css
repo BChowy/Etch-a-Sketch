@@ -17,4 +17,19 @@ header {
   flex-wrap: wrap;
   height: 960px;
   width: 960px;
+  border-style: dashed;
+  border-color: black;
+  border-width: 1px;
+}
+
+.divStyle {
+  box-sizing: border-box;
+
+  /* border-style: dashed;
+  border-color: black;
+  border-width: 1px; */
+
+  /*background-color: aqua;
+   height: 80px;
+  width: 80px; */
 }
