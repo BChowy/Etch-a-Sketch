@@ -5,3 +5,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+header {
+  text-align: center;
+  font-size: 24px;
+  margin: 24px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 960px;
+  width: 960px;
+}
