@@ -10,9 +10,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(50, 50, 50);
 }
 
 header {
+  color: white;
   text-align: center;
   font-size: 24px;
   margin: 24px;
@@ -21,6 +23,8 @@ header {
 #resize {
   padding: 10px 15px;
   font-size: 16px;
+  background-color: white;
+  color: rgb(50, 50, 50);
 }
 
 #container {
@@ -28,9 +32,7 @@ header {
   flex-wrap: wrap;
   height: 960px;
   width: 960px;
-  border-style: dashed;
-  border-color: black;
-  border-width: 1px;
+  background-color: white;
 }
 
 .divStyle {
