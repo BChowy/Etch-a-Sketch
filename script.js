@@ -12,3 +12,13 @@ const dimensions = 960 / numOfDiv;
         container.appendChild(div);
         i++;
     }
+
+const allDiv = container.querySelectorAll('div');
+
+//hover effect
+allDiv.forEach((div) => {
+    div.addEventListener('mouseover', () => {
+        div.classList.add('change-color');
+    });
+
+});
