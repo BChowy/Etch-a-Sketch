@@ -18,6 +18,11 @@ header {
   margin: 24px;
 }
 
+#resize {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
 #container {
   display: flex;
   flex-wrap: wrap;
