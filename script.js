@@ -4,7 +4,9 @@ const resizeBtn = document.querySelector('#resize');
 resizeBtn.addEventListener('click', getNewSize);
 
 //Calculate dimension
-let calculateDims = (divPerRow) => 960 / divPerRow;
+
+    //create div, add class to it, determine it dimensions, then append it to the container
+    while (i < pixels) {
 
 createGrid();
 
