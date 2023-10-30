@@ -17,7 +17,6 @@ header {
   color: white;
   text-align: center;
   font-size: 24px;
-  margin: 24px;
 }
 
 #resize {
@@ -30,8 +29,9 @@ header {
 #container {
   display: flex;
   flex-wrap: wrap;
-  height: 960px;
-  width: 960px;
+  margin: 40px;
+  height: 480px;
+  width: 480px;
   background-color: white;
 }
 
