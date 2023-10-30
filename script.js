@@ -20,14 +20,16 @@ function createGrid(divPerRow = 32) {
         container.appendChild(div);
         i++;
     }
+    hoverEffect();
     }
 
+//div color changes when hovering
+function hoverEffect() {
 const allDiv = container.querySelectorAll('div');
-
-//hover effect
 allDiv.forEach((div) => {
     div.addEventListener('mouseover', () => {
         div.classList.add('change-color');
     });
 
 });
+}
