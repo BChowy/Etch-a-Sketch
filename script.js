@@ -40,10 +40,20 @@ function hoverEffect() {
     const allDiv = container.querySelectorAll('div');
     allDiv.forEach((div) => {
         div.addEventListener('mouseover', () => {
-            div.classList.add('change-color');
+            // div.classList.add('change-color');
+            div.style.backgroundColor = getRandomColor();
         });
 
     });
+}
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.round(Math.random() * 15)];
+    }
+    return color;
 }
 
 //Remove container's children
