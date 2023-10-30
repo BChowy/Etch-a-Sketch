@@ -1,9 +1,12 @@
 const container = document.querySelector('#container');
 const resizeBtn = document.querySelector('#resize');
 
+resizeBtn.addEventListener('click', getNewSize);
 
 //Calculate dimension
 let calculateDims = (divPerRow) => 960 / divPerRow;
+
+createGrid();
 
 //Get new size from user
 function getNewSize() {
