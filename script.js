@@ -4,9 +4,7 @@ const resizeBtn = document.querySelector('#resize');
 resizeBtn.addEventListener('click', getNewSize);
 
 //Calculate dimension
-
-    //create div, add class to it, determine it dimensions, then append it to the container
-    while (i < pixels) {
+let calculateDims = (divPerRow) => 960 / divPerRow;
 
 createGrid();
 
@@ -20,6 +18,7 @@ function getNewSize() {
 
 //Create a grid of div
 function createGrid(divPerRow = 32) {
+    removeChildren();
     const dimensions = calculateDims(divPerRow);
     let pixels = Math.pow(divPerRow, 2);
     let i = 0;
@@ -34,15 +33,24 @@ function createGrid(divPerRow = 32) {
         i++;
     }
     hoverEffect();
-    }
+}
 
 //div color changes when hovering
 function hoverEffect() {
-const allDiv = container.querySelectorAll('div');
-allDiv.forEach((div) => {
-    div.addEventListener('mouseover', () => {
-        div.classList.add('change-color');
-    });
+    const allDiv = container.querySelectorAll('div');
+    allDiv.forEach((div) => {
+        div.addEventListener('mouseover', () => {
+            div.classList.add('change-color');
+        });
 
-});
+    });
+}
+
+//Remove container's children
+function removeChildren() {
+    const allDiv = container.querySelectorAll('div');
+    for (const div of allDiv) {
+        container.removeChild(div);
+    }
+
 }
