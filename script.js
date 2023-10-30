@@ -5,6 +5,14 @@ const resizeBtn = document.querySelector('#resize');
 //Calculate dimension
 let calculateDims = (divPerRow) => 960 / divPerRow;
 
+//Get new size from user
+function getNewSize() {
+    let input = prompt("Enter number of pixels that doesn't exceed 100");
+    while (input > 100) input = prompt("Enter a number less or equal 100");
+    const divPerRow = Number(input);
+    createGrid(divPerRow);
+}
+
 //Create a grid of div
 function createGrid(divPerRow = 32) {
     const dimensions = calculateDims(divPerRow);
