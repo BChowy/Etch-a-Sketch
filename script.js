@@ -1,8 +1,10 @@
 const container = document.querySelector('#container');
 const resizeBtn = document.querySelector('#resize');
 
-let numOfDiv = 64;
-const dimensions = 960 / numOfDiv;
+
+//Calculate dimension
+let calculateDims = (divPerRow) => 960 / divPerRow;
+
     let i = 0;
     while (i < Math.pow(numOfDiv, 2)) {
         const div = document.createElement('div');
