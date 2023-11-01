@@ -19,3 +19,7 @@ I am currently working on adding the ability to either draw using randomized col
 - How to use @import in CSS to import fonts.
 - How to do a hover effect using 'mouseover'.
 - Randomize RGB colors.
+
+## Preview
+#### You can view the project at [this link](https://bchowy.github.io/Etch-a-Sketch/).
+![image](https://github.com/BChowy/Etch-a-Sketch/assets/75831792/3ac34eda-b837-4d69-b1e7-998de3084669)
