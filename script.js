@@ -8,6 +8,20 @@ const clearCanvas = document.querySelector('#clear');
 //Calculate dimension
 let calculateDims = (divPerRow) => 480 / divPerRow;
 
+clearCanvas.addEventListener('click', () => {
+    const allDiv = container.querySelectorAll('div');
+    allDiv.forEach((div) => { div.style.backgroundColor = 'white'; });
+});
+
+resizeBtn.addEventListener('click', getNewSize);
+blackColorBtn.addEventListener('click', () => {
+    hoverEffect('blackColor');
+});
+
+randomColorBtn.addEventListener('click', () => {
+    hoverEffect('randomColor');
+});
+
 createGrid();
 
 //Get new size from user
@@ -43,7 +57,7 @@ function hoverEffect(buttonType) {
     allDiv.forEach((div) => {
         div.addEventListener('mouseover', () => {
             if (buttonType === 'randomColor') {
-            div.style.backgroundColor = getRandomColor();
+                div.style.backgroundColor = getRandomColor();
             } else {
                 div.style.backgroundColor = 'black';
             }
