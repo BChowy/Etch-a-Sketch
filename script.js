@@ -52,10 +52,11 @@ function hoverEffect(buttonType) {
     });
 }
 
+//create a hex code for a random color
 function getRandomColor() {
     var letters = '0123456789ABCDEF'.split('');
     var color = '#';
-    for (var i = 0; i < 6; i++ ) {
+    for (var i = 0; i < 6; i++) {
         color += letters[Math.round(Math.random() * 15)];
     }
     return color;
@@ -63,9 +64,8 @@ function getRandomColor() {
 
 //Remove container's children
 function removeChildren() {
-    const allDiv = container.querySelectorAll('div');
-    for (const div of allDiv) {
-        container.removeChild(div);
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
     }
 
 }
