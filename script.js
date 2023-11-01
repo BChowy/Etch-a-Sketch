@@ -38,12 +38,15 @@ function createGrid(divPerRow = 32) {
 }
 
 //div color changes when hovering
-function hoverEffect() {
+function hoverEffect(buttonType) {
     const allDiv = container.querySelectorAll('div');
     allDiv.forEach((div) => {
         div.addEventListener('mouseover', () => {
-            // div.classList.add('change-color');
+            if (buttonType === 'randomColor') {
             div.style.backgroundColor = getRandomColor();
+            } else {
+                div.style.backgroundColor = 'black';
+            }
         });
 
     });
