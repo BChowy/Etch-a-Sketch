@@ -1,7 +1,9 @@
 const container = document.querySelector('#container');
 const resizeBtn = document.querySelector('#resize');
 
-resizeBtn.addEventListener('click', getNewSize);
+const blackColorBtn = document.querySelector('#black-color');
+const randomColorBtn = document.querySelector('#random-color');
+const clearCanvas = document.querySelector('#clear');
 
 //Calculate dimension
 let calculateDims = (divPerRow) => 480 / divPerRow;
