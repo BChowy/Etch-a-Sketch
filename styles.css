@@ -23,7 +23,7 @@ header {
   font-size: 24px;
 }
 
-#resize {
+button {
   padding: 10px 15px;
   font-size: 16px;
   background-color: white;
