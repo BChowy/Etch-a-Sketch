@@ -13,7 +13,7 @@ createGrid();
 //Get new size from user
 function getNewSize() {
     let input = prompt("Enter number of pixels that doesn't exceed 100");
-    while (input > 100) input = prompt("Enter a number less or equal 100");
+    while (input > 100 || input < 1 || input == undefined) input = prompt("Enter a number less or equal 100");
     const divPerRow = Number(input);
     createGrid(divPerRow);
 }
